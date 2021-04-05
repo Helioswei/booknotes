@@ -11,6 +11,21 @@
  *
  */
 
+class Empty {};
+
+class Empty()
+{
+public:
+    Empty();//default 构造函数
+    Empty(const Empty&);//copy 构造函数
+    ~Empty();//析构函数，，是否是virtual见稍后说明
+    Empty& operator=(const Empty&);//copy assignment操作符
+};
+/*
+ *如果自己声明了一个构造函数，编译器于是不再为它创建default构造函数。
+ * */
+
+
 
 
 
